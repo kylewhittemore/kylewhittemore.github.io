@@ -1,42 +1,63 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kyle Whittemore</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <ul class="navbar">
-            <li class="header-name">
-                <h1>Kyle Whittemore</h1>
-            </li>
-            <li class="nav-item"><a href="index.html">About</a></li>
-            <li class="nav-item with-seperators"><a href="portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <section class="flex-container">
-        <div class="content-header">
-            <h2>Contact</h2>
+    <header class="navbar">
+        <div class="nav-brand"><a href="index.html">
+                <h2 class="header-text-large">Kyle Whittemore</h2>
+                <h4 class="header-text-small">Aspiring Web Developer</h4>
+            </a></div>
+        <div class="nav-element">
+            <ul class="nav-list">
+                <li class="nav-link"><a href="projects.html">Projects</a></li>
+                <li class="nav-link"><a href="blog.html">Blog</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <form class="contact-form-section">
-            <p class="form-text">Name:</p>
-            <input type="text" placeholder="John Smith" />
-            <p class="form-text">Email:</p>
-            <input type="text" placeholder="someone@somewhere.com" />
-            <p class="form-text">Message:</p>
-            <textarea>Write a message here....</textarea>
-            <br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <footer>
-        <h3>copywrong 2000</h3>
+    </header>
+    <div class="flex-container">
+        <div class="content-section-form">
+            <form class="contact-form-section">
+                <p class="form-text">Name:</p>
+                <input type="text" placeholder="John Smith" />
+                <p class="form-text">Email:</p>
+                <input type="text" placeholder="someone@somewhere.com" />
+                <p class="form-text">Message:</p>
+                <textarea>Write a message here....</textarea>
+                <br>
+                <button class="form-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-div">
+            <ul class="nav-list">
+                <li class="nav-link">Github</li>
+                <li class="nav-link">Twitter</li>
+                <li class="nav-link">Linkedin</li>
+            </ul>
+        </div>
     </footer>
+    <script src="javascript.js" async defer></script>
 </body>
 
 </html>
