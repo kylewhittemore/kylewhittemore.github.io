@@ -40,18 +40,16 @@ a:hover {
 
 .nav-brand {
     padding: 20px 0px 20px 50px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.header-text-large {
+.header-text {
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-.header-text-small {
-    padding: 0;
-    margin: 0;
-}
+
 
 .nav-list {
     list-style: none;
@@ -222,7 +220,7 @@ button:hover {
         width: 100%;
         margin: 20px 0px 20px 0px;
         padding: 0px;
-        background-color: rgba(114, 167, 212, .0);
+        background-color: rgba(114, 167, 212, .1);
         border-radius: 0px;
         text-align: center;
     } 
@@ -241,7 +239,10 @@ button:hover {
     .content-image {
         border-radius: 0px;
     }
+} 
 
+/* reorder content cards at the 4 cards to 3 cards breakpoint */
+@media only screen and (max-width: 819px) {
     #flex-content-a {
         order: 1;
     }
@@ -257,9 +258,7 @@ button:hover {
     #flex-content-d {
         order: 3;
     }
-
-} 
-
+}
 /* Hide the last photo when all three content cards dont fit */
 @media only screen and (min-width: 1229px) {
 
